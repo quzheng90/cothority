@@ -453,7 +453,7 @@ export default class ByzCoinRPC implements ICounterUpdater {
             Log.warn("Got retriable error from node:", e.toString());
         }
 
-        if (rec > 0) {
+        if (rec > 1) {
             throw new Error("maximum number of tries reached");
         }
 

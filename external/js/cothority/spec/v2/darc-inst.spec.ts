@@ -8,7 +8,7 @@ import { BCTest } from "../helpers/bctest";
 import { SIGNER } from "../support/conondes";
 import { HistoryObs } from "../support/historyObs";
 
-describe("DarcBS should", () => {
+describe("DarcInst should", () => {
     it("retrieve an instance from byzcoin", async () => {
         const {genesis, rpc} = await BCTest.singleton();
         const dbs = await DarcInst.retrieve(rpc, genesis.getBaseID());
